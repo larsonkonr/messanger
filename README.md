@@ -1,2 +1,2 @@
-# Secretic
-This is an example Rails app to teach about OAuth.
+# Messenger
+The most bestest messenging app of them all. Eventually
