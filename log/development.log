@@ -1,0 +1,1824 @@
+
+
+Started GET "/" for ::1 at 2015-03-02 09:25:38 -0700
+
+ActiveRecord::PendingMigrationError - 
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+:
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/larsonkonr/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/larsonkonr/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/larsonkonr/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/fa1716ab37896bfa/variables" for ::1 at 2015-03-02 09:25:38 -0700
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150302073710)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nickname" varchar, "email" varchar, "provider" varchar, "uid" varchar, "image_url" varchar, "token" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150302073710"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2015-03-02 09:25:57 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 4067ms (Views: 4057.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/application-c3cd2ee3e0bccfca1fdc616e76f41f7f.css?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/dashboard-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-02 09:26:01 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 09:26:03 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 09:26:04 -0700
+
+
+Started GET "/dashboard" for ::1 at 2015-03-02 09:31:10 -0700
+Processing by DashboardController#show as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :authorize! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-02 09:31:10 -0700
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 119ms (Views: 118.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-02 09:40:51 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 290ms (Views: 280.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/application-c3cd2ee3e0bccfca1fdc616e76f41f7f.css?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-02 09:40:51 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 09:40:53 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 09:40:56 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 09:40:57 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 09:40:58 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 09:40:58 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 09:40:58 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 09:40:58 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 09:40:59 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 09:42:23 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 09:42:23 -0700
+
+
+Started GET "/auth/github/callback?code=90629a9d9b1f51540e62&state=69e581333afa1f506f4ea0d6e802fc8419258c4e04c714f9" for ::1 at 2015-03-02 09:42:26 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"90629a9d9b1f51540e62", "state"=>"69e581333afa1f506f4ea0d6e802fc8419258c4e04c714f9", "provider"=>"github"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1  [["provider", "github"], ["uid", "github"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("provider", "uid", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["provider", "github"], ["uid", "github"], ["created_at", "2015-03-02 16:42:27.649564"], ["updated_at", "2015-03-02 16:42:27.649564"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "email" = ?, "nickname" = ?, "image_url" = ?, "token" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["email", "larsonkonr@gmail.com"], ["nickname", "larsonkonr"], ["image_url", "https://avatars.githubusercontent.com/u/7245142?v=3"], ["token", "2ca7b69345504dc2d3a70c53a269620d74f71011"], ["updated_at", "2015-03-02 16:42:27.652635"], ["id", 1]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 23ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-02 09:42:27 -0700
+Processing by DashboardController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered dashboard/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 150ms (Views: 147.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/dashboard-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 09:42:27 -0700
+
+
+Started GET "/assets/application-c3cd2ee3e0bccfca1fdc616e76f41f7f.css?body=1" for ::1 at 2015-03-02 09:42:27 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 09:42:27 -0700
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-02 09:42:27 -0700
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-02 09:42:27 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-02 09:42:27 -0700
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-02 09:42:27 -0700
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-02 09:42:27 -0700
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-02 09:42:27 -0700
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-02 09:42:27 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-02 09:42:27 -0700
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-02 09:42:27 -0700
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-02 09:42:27 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-02 09:42:27 -0700
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-02 09:42:28 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-02 09:42:28 -0700
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-02 09:42:28 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-02 09:42:28 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-02 09:42:28 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-02 09:42:28 -0700
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 09:42:28 -0700
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 09:42:28 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 09:42:28 -0700
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-02 09:42:28 -0700
+
+
+Started DELETE "/logout" for ::1 at 2015-03-02 09:44:32 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KIqoT/jyoRNQv4sIW1CLeLnJMPhIL4zelUZs2Nhu8QqhfIN/Oza6w30wL03UaY6SGlyJife4TyWazrGh69b98A=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-02 09:44:32 -0700
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 149ms (Views: 147.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/application-c3cd2ee3e0bccfca1fdc616e76f41f7f.css?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-02 09:44:32 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 09:44:34 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 09:44:34 -0700
+
+
+Started GET "/auth/github/callback?code=cc261717757a4db1919e&state=93fb85d1da4712a4e1ec020a8e672dc5ab8129e685f5481e" for ::1 at 2015-03-02 09:44:34 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"cc261717757a4db1919e", "state"=>"93fb85d1da4712a4e1ec020a8e672dc5ab8129e685f5481e", "provider"=>"github"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1  [["provider", "github"], ["uid", "github"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-02 09:44:35 -0700
+Processing by DashboardController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered dashboard/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 125ms (Views: 124.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/dashboard-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/application-c3cd2ee3e0bccfca1fdc616e76f41f7f.css?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-02 09:44:35 -0700
+
+
+Started GET "/dashboard" for ::1 at 2015-03-02 10:30:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DashboardController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered dashboard/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 342ms (Views: 315.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/dashboard-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/application-c3cd2ee3e0bccfca1fdc616e76f41f7f.css?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 10:30:03 -0700
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 10:30:04 -0700
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 10:30:04 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-02 10:30:04 -0700
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-02 10:30:04 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-02 10:30:04 -0700
+
+
+Started DELETE "/logout" for ::1 at 2015-03-02 10:30:05 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"n4+845h4zlf6ioj3jKxi8jxjsYbw8iCSEl2BssVLUTi0JIs6xXInqCnY+pSdJILz7MWxsyUyeni/AisFdwtDOA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-02 10:30:05 -0700
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 145ms (Views: 144.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/dashboard-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/application-c3cd2ee3e0bccfca1fdc616e76f41f7f.css?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-02 10:30:05 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 10:30:06 -0700
+
+
+Started GET "/auth/github" for ::1 at 2015-03-02 10:30:08 -0700
+
+
+Started GET "/auth/github/callback?code=3e8d5e8152daa0b76f77&state=8659fa3e475faaf226d347ce2d08699f4709a12080a9164d" for ::1 at 2015-03-02 10:30:08 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"3e8d5e8152daa0b76f77", "state"=>"8659fa3e475faaf226d347ce2d08699f4709a12080a9164d", "provider"=>"github"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1[0m  [["provider", "github"], ["uid", "7245142"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["provider", "github"], ["uid", "7245142"], ["created_at", "2015-03-02 17:30:09.018509"], ["updated_at", "2015-03-02 17:30:09.018509"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "email" = ?, "nickname" = ?, "image_url" = ?, "token" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["email", "larsonkonr@gmail.com"], ["nickname", "larsonkonr"], ["image_url", "https://avatars.githubusercontent.com/u/7245142?v=3"], ["token", "2ca7b69345504dc2d3a70c53a269620d74f71011"], ["updated_at", "2015-03-02 17:30:09.023545"], ["id", 2]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 15ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-02 10:30:09 -0700
+Processing by DashboardController#show as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered dashboard/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 171ms (Views: 170.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/dashboard-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/application-c3cd2ee3e0bccfca1fdc616e76f41f7f.css?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-02 10:30:09 -0700
+
+
+Started GET "/" for ::1 at 2015-03-24 10:16:34 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 609ms (Views: 591.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/application-c3cd2ee3e0bccfca1fdc616e76f41f7f.css?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/dashboard-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-24 10:16:35 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 10:16:36 -0600
+
+
+Started GET "/auth/github" for ::1 at 2015-03-24 10:16:38 -0600
+
+
+Started GET "/auth/github" for ::1 at 2015-03-24 10:16:38 -0600
+
+
+Started GET "/auth/github/callback?code=06debda7822772c2d206&state=78734864ce1d9cb7f902b5a8df0f7d7aaf1b7f9600e0e445" for ::1 at 2015-03-24 10:16:38 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"06debda7822772c2d206", "state"=>"78734864ce1d9cb7f902b5a8df0f7d7aaf1b7f9600e0e445", "provider"=>"github"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1  [["provider", "github"], ["uid", "7245142"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 19ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-24 10:16:39 -0600
+Processing by DashboardController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered dashboard/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 272ms (Views: 268.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-24 10:58:25 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DashboardController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered dashboard/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 443ms (Views: 412.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/application-c3cd2ee3e0bccfca1fdc616e76f41f7f.css?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/dashboard-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-24 10:58:26 -0600
+
+
+Started GET "/" for ::1 at 2015-03-24 10:58:29 -0600
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 154ms (Views: 153.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/application-c3cd2ee3e0bccfca1fdc616e76f41f7f.css?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-24 10:58:29 -0600
+
+
+Started GET "/" for ::1 at 2015-03-24 10:59:22 -0600
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1634ms (Views: 1633.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-24 10:59:23 -0600
+
+
+Started GET "/assets/dashboard-471b27d96634970a0dbaf1ef45606394.css?body=1" for ::1 at 2015-03-24 10:59:23 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-24 10:59:23 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 10:59:23 -0600
+
+
+Started GET "/assets/application-02128130db61b0abf2fe54e8c400ce8a.css?body=1" for ::1 at 2015-03-24 10:59:23 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-24 10:59:24 -0600
+
+
+Started GET "/auth/github" for ::1 at 2015-03-24 10:59:25 -0600
+
+
+Started GET "/auth/github" for ::1 at 2015-03-24 10:59:25 -0600
+
+
+Started GET "/auth/github/callback?code=39f3a99375b7ad1956dd&state=89dd21f77d489ed5953184e58d8122b69f6cab004cc1b756" for ::1 at 2015-03-24 10:59:26 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"39f3a99375b7ad1956dd", "state"=>"89dd21f77d489ed5953184e58d8122b69f6cab004cc1b756", "provider"=>"github"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1[0m  [["provider", "github"], ["uid", "7245142"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 10ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-24 10:59:26 -0600
+Processing by DashboardController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered dashboard/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 124ms (Views: 122.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/application-02128130db61b0abf2fe54e8c400ce8a.css?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/dashboard-471b27d96634970a0dbaf1ef45606394.css?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-24 10:59:27 -0600
+
+
+Started DELETE "/logout" for ::1 at 2015-03-24 11:04:28 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pdekuQWxd/y99/8Re4WIH3Bnlc+IZwSQJ5mFXzqxlvkxzY45A4lN0r29sO9qSV7WV6HzXBZk2LMf07kOqvmFXA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-24 11:04:28 -0600
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 126ms (Views: 125.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard-471b27d96634970a0dbaf1ef45606394.css?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/application-02128130db61b0abf2fe54e8c400ce8a.css?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-24 11:04:29 -0600
+
+
+Started GET "/auth/github" for ::1 at 2015-03-24 11:04:31 -0600
+
+
+Started GET "/auth/github" for ::1 at 2015-03-24 11:04:31 -0600
+
+
+Started GET "/auth/github/callback?code=0f599eb165b6e02df087&state=10d79e6770c5a8193ea24cd42e1b68129e080562d7d677ab" for ::1 at 2015-03-24 11:04:32 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"0f599eb165b6e02df087", "state"=>"10d79e6770c5a8193ea24cd42e1b68129e080562d7d677ab", "provider"=>"github"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1[0m  [["provider", "github"], ["uid", "7245142"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-24 11:04:32 -0600
+Processing by DashboardController#show as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered dashboard/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 148ms (Views: 147.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/dashboard-471b27d96634970a0dbaf1ef45606394.css?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/application-02128130db61b0abf2fe54e8c400ce8a.css?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-24 11:04:33 -0600
+
+
+Started DELETE "/logout" for ::1 at 2015-03-24 11:04:34 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"V0hU1LgNb7HMb/4yIL/UhGC2AnRiagbfdVAo6lKdKBRyR/o037rg/JLxLgz7Sq2v9eahKDiiBp9RBmGlbkxR6A=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-24 11:04:35 -0600
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 183ms (Views: 181.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/application-02128130db61b0abf2fe54e8c400ce8a.css?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/dashboard-471b27d96634970a0dbaf1ef45606394.css?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:04:35 -0600
+
+
+Started GET "/" for ::1 at 2015-03-24 11:07:43 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 388ms (Views: 378.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-24 11:07:43 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-24 11:07:43 -0600
+
+
+Started GET "/assets/application-02128130db61b0abf2fe54e8c400ce8a.css?body=1" for ::1 at 2015-03-24 11:07:43 -0600
+
+
+Started GET "/assets/dashboard-471b27d96634970a0dbaf1ef45606394.css?body=1" for ::1 at 2015-03-24 11:07:43 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 11:07:43 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-24 11:07:44 -0600
+
+
+Started GET "/auth/github" for ::1 at 2015-03-24 11:08:35 -0600
+
+
+Started GET "/auth/github" for ::1 at 2015-03-24 11:08:35 -0600
+
+
+Started GET "/auth/github/callback?code=ec901e276704b51b5980&state=a03454fa8ea9b8d5f0fb144fe7cab07488e61592b4ad2fe3" for ::1 at 2015-03-24 11:08:36 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"ec901e276704b51b5980", "state"=>"a03454fa8ea9b8d5f0fb144fe7cab07488e61592b4ad2fe3", "provider"=>"github"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1  [["provider", "github"], ["uid", "7245142"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 21ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-24 11:08:36 -0600
+Processing by DashboardController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered dashboard/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 184ms (Views: 179.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/dashboard-471b27d96634970a0dbaf1ef45606394.css?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/home-6e6bc3fd43d6776f40b3cad0b0f75008.css?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/application-02128130db61b0abf2fe54e8c400ce8a.css?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-24 11:08:37 -0600
+
+
+Started GET "/dashboard" for ::1 at 2015-03-24 11:10:09 -0600
+Processing by DashboardController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered dashboard/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2050ms (Views: 2048.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/home-b126c83c13ad04497975d073987b7f9b.css?body=1" for ::1 at 2015-03-24 11:10:11 -0600
+
+
+Started GET "/assets/application-39531ce48db7e68300de182fa904cb24.css?body=1" for ::1 at 2015-03-24 11:10:11 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-24 11:10:11 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 11:10:11 -0600
+
+
+Started GET "/assets/dashboard-cec44d1310a7fa230ec171574aa238b8.css?body=1" for ::1 at 2015-03-24 11:10:11 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-24 11:10:11 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-24 11:10:11 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-24 11:10:11 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-24 11:10:11 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-24 11:10:11 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-24 11:10:11 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-24 11:10:12 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-24 11:10:12 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-24 11:10:12 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-24 11:10:12 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-24 11:10:12 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-24 11:10:12 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-24 11:10:12 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 11:10:12 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-24 11:10:12 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:10:12 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:10:12 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:10:12 -0600
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-24 11:10:12 -0600
+
+
+Started GET "/" for ::1 at 2015-03-24 11:10:20 -0600
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 199ms (Views: 197.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for ::1 at 2015-03-24 11:10:20 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-24 11:10:20 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for ::1 at 2015-03-24 11:10:20 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for ::1 at 2015-03-24 11:10:20 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for ::1 at 2015-03-24 11:10:20 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-24 11:10:20 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for ::1 at 2015-03-24 11:10:20 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for ::1 at 2015-03-24 11:10:20 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for ::1 at 2015-03-24 11:10:21 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for ::1 at 2015-03-24 11:10:21 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for ::1 at 2015-03-24 11:10:21 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for ::1 at 2015-03-24 11:10:21 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for ::1 at 2015-03-24 11:10:21 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for ::1 at 2015-03-24 11:10:21 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for ::1 at 2015-03-24 11:10:21 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-24 11:10:21 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-24 11:10:21 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:10:21 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:10:21 -0600
+
+
+Started GET "/assets/application-729923b4b7814cb355f4ad36adc037cc.js?body=1" for ::1 at 2015-03-24 11:10:21 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-24 11:10:21 -0600
