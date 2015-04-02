@@ -12665,3 +12665,115 @@ Started GET "/assets/users-d36ac1bdd6e0a36d9cc35937930d1235.js?body=1" for 127.0
 
 
 Started GET "/assets/application-b741c6531890ef39457f3730e855440b.js?body=1" for 127.0.0.1 at 2015-04-01 20:28:25 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 20:48:04 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 534ms (Views: 522.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chat-ae47fe844c4d89b804b251866cdded64.css?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/conversations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/dashboard-cec44d1310a7fa230ec171574aa238b8.css?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/home-6277e58eda7ce07dbde25ce412bc9f38.css?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/users-c10398b6f09351b5ad3dc0bfaff0fc00.css?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/application-b1dd462bccb40070144bc7d8afad32a4.css?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/chat-48f345ca0f0bc036d0f516b795ff31a3.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/private_pub-45038657b433af8881d789bffa35a77a.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/conversations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/users-d36ac1bdd6e0a36d9cc35937930d1235.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/assets/application-b741c6531890ef39457f3730e855440b.js?body=1" for 127.0.0.1 at 2015-04-01 20:48:05 -0600
+
+
+Started GET "/auth/github" for 127.0.0.1 at 2015-04-01 20:48:18 -0600
+
+
+Started GET "/auth/github" for 127.0.0.1 at 2015-04-01 20:48:18 -0600

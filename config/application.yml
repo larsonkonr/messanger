@@ -13,3 +13,7 @@
 
 github_key: 2e80481ea4518c1c0962
 github_secret: ac93243030a12e4aa3d5202baaa7699a37148190
+
+development:
+  github_key: e60042cb558d7a57f7bb
+  github_secret: 4750b94b126e9afe7ed39d58617445def2a3cd28
