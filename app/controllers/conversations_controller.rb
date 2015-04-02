@@ -1,5 +1,5 @@
 class ConversationsController < ApplicationController
-  # before_filter :authenticate_user!
+  before_filter :authorize!
 
   layout false
 
