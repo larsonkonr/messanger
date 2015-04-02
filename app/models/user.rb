@@ -1,7 +1,4 @@
 class User < ActiveRecord::Base
-  has_many :conversations, :foreign_key => :sender_id
-  after_create :create_default_conversation
-  
   def self.find_or_create_from_auth(auth)
     user = User.find_or_create_by(provider: auth.provider, uid: auth.uid)
 
@@ -12,14 +9,5 @@ class User < ActiveRecord::Base
     user.save
 
     user
-  end
-
-
-  private
-
-  # for demo purposes
-
-  def create_default_conversation
-    Conversation.create(sender_id: 1, recipient_id: self.id) unless self.id == 1
   end
 end
