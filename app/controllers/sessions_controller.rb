@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
     @user = User.find_or_create_from_auth(auth)
     if @user
       session[:user_id] = @user.id
-      redirect_to dashboard_path
+      redirect_to users_path
     else
       redirect_to root_path
     end
@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session.clear
-    
+
     redirect_to root_path
   end
   private

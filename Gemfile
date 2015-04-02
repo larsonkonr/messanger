@@ -11,6 +11,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'omniauth-github'
 gem 'figaro'
+gem 'private_pub'
+gem 'thin'
 
 group :development, :test do
   gem 'better_errors'
