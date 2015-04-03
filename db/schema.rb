@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 20150402195947) do
   create_table "conversations", force: :cascade do |t|
     t.integer  "sender_id"
     t.integer  "recipient_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "conversations", ["recipient_id"], name: "index_conversations_on_recipient_id", using: :btree
