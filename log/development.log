@@ -20565,3 +20565,940 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 359ms (Views: 358.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chat-ae47fe844c4d89b804b251866cdded64.css?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/conversations-3bc746980d14f4d478e3c0afd6417209.css?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/dashboard-cec44d1310a7fa230ec171574aa238b8.css?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/home-6277e58eda7ce07dbde25ce412bc9f38.css?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/users-c10398b6f09351b5ad3dc0bfaff0fc00.css?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/application-8aad899db38d9e727173b87f74cc0e52.css?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/chat-48f345ca0f0bc036d0f516b795ff31a3.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/private_pub-45038657b433af8881d789bffa35a77a.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/conversations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/users-d36ac1bdd6e0a36d9cc35937930d1235.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/assets/application-b741c6531890ef39457f3730e855440b.js?body=1" for 127.0.0.1 at 2015-04-03 08:16:53 -0600
+
+
+Started GET "/auth/github" for 127.0.0.1 at 2015-04-03 08:16:57 -0600
+
+
+Started GET "/auth/github" for 127.0.0.1 at 2015-04-03 08:17:10 -0600
+
+
+Started GET "/auth/github" for 127.0.0.1 at 2015-04-03 08:17:11 -0600
+
+
+Started GET "/auth/github/callback?code=868755e4611aa7a9e1ed&state=7a5edf5cbc26e5caaeec27e89fa8f339b37f8fb05db66569" for 127.0.0.1 at 2015-04-03 08:17:12 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"868755e4611aa7a9e1ed", "state"=>"7a5edf5cbc26e5caaeec27e89fa8f339b37f8fb05db66569", "provider"=>"github"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 LIMIT 1  [["provider", "github"], ["uid", "7245142"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/users
+Completed 302 Found in 19ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-04-03 08:17:13 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE (NOT (id = 1))  ORDER BY created_at DESC
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1)[0m
+  [1m[35mConversation Load (0.4ms)[0m  SELECT "conversations".* FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1)  ORDER BY created_at DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mMessage Load (0.8ms)[0m  SELECT  "messages".* FROM "messages" WHERE "messages"."conversation_id" = $1  ORDER BY "messages"."id" DESC LIMIT 1  [["conversation_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "messages".* FROM "messages" WHERE "messages"."conversation_id" = $1  ORDER BY "messages"."id" DESC LIMIT 1[0m  [["conversation_id", 1]]
+  Rendered users/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 360ms (Views: 347.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/chat-ae47fe844c4d89b804b251866cdded64.css?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/conversations-3bc746980d14f4d478e3c0afd6417209.css?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/dashboard-cec44d1310a7fa230ec171574aa238b8.css?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/home-6277e58eda7ce07dbde25ce412bc9f38.css?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/users-c10398b6f09351b5ad3dc0bfaff0fc00.css?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/application-8aad899db38d9e727173b87f74cc0e52.css?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/chat-48f345ca0f0bc036d0f516b795ff31a3.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/private_pub-45038657b433af8881d789bffa35a77a.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/conversations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/users-d36ac1bdd6e0a36d9cc35937930d1235.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started GET "/assets/application-b741c6531890ef39457f3730e855440b.js?body=1" for 127.0.0.1 at 2015-04-03 08:17:14 -0600
+
+
+Started POST "/conversations" for 127.0.0.1 at 2015-04-03 08:17:21 -0600
+Processing by ConversationsController#create as */*
+  Parameters: {"sender_id"=>"1", "recipient_id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mConversation Load (0.6ms)[0m  [1mSELECT "conversations".* FROM "conversations" WHERE ((conversations.sender_id = '1' AND conversations.recipient_id ='2') OR (conversations.sender_id = '2' AND conversations.recipient_id ='1'))[0m
+  [1m[35mConversation Load (0.5ms)[0m  SELECT  "conversations".* FROM "conversations" WHERE ((conversations.sender_id = '1' AND conversations.recipient_id ='2') OR (conversations.sender_id = '2' AND conversations.recipient_id ='1'))  ORDER BY "conversations"."id" ASC LIMIT 1
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/conversations/1" for 127.0.0.1 at 2015-04-03 08:17:21 -0600
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.2ms)[0m  SELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mMessage Exists (0.5ms)[0m  SELECT  1 AS one FROM "messages" WHERE "messages"."conversation_id" = $1 LIMIT 1  [["conversation_id", 1]]
+  [1m[36mMessage Load (0.3ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = $1[0m  [["conversation_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered messages/_message.html.erb (10.8ms)
+  Rendered conversations/show.html.erb (23.5ms)
+Completed 200 OK in 33ms (Views: 28.7ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:17:25 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"heloo"}, "conversation_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mConversation Load (0.3ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "heloo"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:17:25.827926"], ["updated_at", "2015-04-03 14:17:25.827926"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/_message.html.erb (0.7ms)
+  Rendered messages/create.js.erb (11.1ms)
+Completed 200 OK in 28ms (Views: 18.6ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:17:37 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"headfjkaf"}, "conversation_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.1ms)[0m  SELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "headfjkaf"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:17:37.657103"], ["updated_at", "2015-04-03 14:17:37.657103"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/_message.html.erb (0.8ms)
+  Rendered messages/create.js.erb (9.6ms)
+Completed 200 OK in 24ms (Views: 13.7ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:17:38 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"sdfsdg"}, "conversation_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "sdfsdg"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:17:38.613590"], ["updated_at", "2015-04-03 14:17:38.613590"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/_message.html.erb (2.3ms)
+  Rendered messages/create.js.erb (10.7ms)
+Completed 200 OK in 20ms (Views: 14.4ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:17:39 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"sdf"}, "conversation_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.1ms)[0m  SELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "sdf"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:17:39.302296"], ["updated_at", "2015-04-03 14:17:39.302296"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/_message.html.erb (0.9ms)
+  Rendered messages/create.js.erb (7.2ms)
+Completed 200 OK in 17ms (Views: 11.8ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:17:41 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"sfgfsgfg"}, "conversation_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "sfgfsgfg"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:17:41.740013"], ["updated_at", "2015-04-03 14:17:41.740013"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/_message.html.erb (0.6ms)
+  Rendered messages/create.js.erb (6.8ms)
+Completed 200 OK in 18ms (Views: 10.1ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:17:44 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"dfgdghdgj"}, "conversation_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.5ms)[0m  SELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "dfgdghdgj"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:17:44.431284"], ["updated_at", "2015-04-03 14:17:44.431284"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/_message.html.erb (1.6ms)
+  Rendered messages/create.js.erb (12.0ms)
+Completed 200 OK in 22ms (Views: 15.2ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:17:46 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"fsgsfsg"}, "conversation_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mConversation Load (0.1ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "fsgsfsg"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:17:46.302656"], ["updated_at", "2015-04-03 14:17:46.302656"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/_message.html.erb (0.7ms)
+  Rendered messages/create.js.erb (7.4ms)
+Completed 200 OK in 18ms (Views: 12.3ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:19:47 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"adfsdgsd"}, "conversation_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.2ms)[0m  SELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "adfsdgsd"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:19:47.837479"], ["updated_at", "2015-04-03 14:19:47.837479"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/_message.html.erb (0.7ms)
+  Rendered messages/create.js.erb (7.3ms)
+Completed 200 OK in 21ms (Views: 11.1ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:19:54 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"fdfhfdhfh"}, "conversation_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mConversation Load (0.3ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "fdfhfdhfh"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:19:54.175252"], ["updated_at", "2015-04-03 14:19:54.175252"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/_message.html.erb (0.6ms)
+  Rendered messages/create.js.erb (7.8ms)
+Completed 200 OK in 20ms (Views: 11.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-04-03 08:29:54 -0600
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :authorize! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 08:29:54 -0600
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 250ms (Views: 249.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chat-ae47fe844c4d89b804b251866cdded64.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/conversations-3bc746980d14f4d478e3c0afd6417209.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/dashboard-cec44d1310a7fa230ec171574aa238b8.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/home-6277e58eda7ce07dbde25ce412bc9f38.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/users-c10398b6f09351b5ad3dc0bfaff0fc00.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/application-8aad899db38d9e727173b87f74cc0e52.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/chat-48f345ca0f0bc036d0f516b795ff31a3.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/private_pub-45038657b433af8881d789bffa35a77a.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/conversations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/users-d36ac1bdd6e0a36d9cc35937930d1235.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/assets/application-b741c6531890ef39457f3730e855440b.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:55 -0600
+
+
+Started GET "/auth/github" for 127.0.0.1 at 2015-04-03 08:29:57 -0600
+
+
+Started GET "/auth/github" for 127.0.0.1 at 2015-04-03 08:29:57 -0600
+
+
+Started GET "/auth/github/callback?code=f9030439aa168964a517&state=3bacf909ea926043daf88606fa0959aaed1732e5c7f4cece" for 127.0.0.1 at 2015-04-03 08:29:58 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"f9030439aa168964a517", "state"=>"3bacf909ea926043daf88606fa0959aaed1732e5c7f4cece", "provider"=>"github"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 LIMIT 1[0m  [["provider", "github"], ["uid", "7245142"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (NOT (id = 1))  ORDER BY created_at DESC[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1)
+  [1m[36mConversation Load (0.3ms)[0m  [1mSELECT "conversations".* FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1)  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT  "messages".* FROM "messages" WHERE "messages"."conversation_id" = $1  ORDER BY "messages"."id" DESC LIMIT 1[0m  [["conversation_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "messages".* FROM "messages" WHERE "messages"."conversation_id" = $1  ORDER BY "messages"."id" DESC LIMIT 1  [["conversation_id", 1]]
+  Rendered users/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 253ms (Views: 250.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/chat-ae47fe844c4d89b804b251866cdded64.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/conversations-3bc746980d14f4d478e3c0afd6417209.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/dashboard-cec44d1310a7fa230ec171574aa238b8.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/home-6277e58eda7ce07dbde25ce412bc9f38.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/users-c10398b6f09351b5ad3dc0bfaff0fc00.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/application-8aad899db38d9e727173b87f74cc0e52.css?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/chat-48f345ca0f0bc036d0f516b795ff31a3.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/private_pub-45038657b433af8881d789bffa35a77a.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/conversations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/users-d36ac1bdd6e0a36d9cc35937930d1235.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/assets/application-b741c6531890ef39457f3730e855440b.js?body=1" for 127.0.0.1 at 2015-04-03 08:29:59 -0600
+
+
+Started GET "/conversations/1" for 127.0.0.1 at 2015-04-03 08:33:35 -0600
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.2ms)[0m  SELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mMessage Exists (0.2ms)[0m  SELECT  1 AS one FROM "messages" WHERE "messages"."conversation_id" = $1 LIMIT 1  [["conversation_id", 1]]
+  [1m[36mMessage Load (0.4ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = $1[0m  [["conversation_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/_message.html.erb (12.9ms)
+  Rendered conversations/show.html.erb (19.0ms)
+Completed 200 OK in 26ms (Views: 21.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/conversations" for 127.0.0.1 at 2015-04-03 08:33:49 -0600
+Processing by ConversationsController#create as */*
+  Parameters: {"sender_id"=>"1", "recipient_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.4ms)[0m  SELECT "conversations".* FROM "conversations" WHERE ((conversations.sender_id = '1' AND conversations.recipient_id ='2') OR (conversations.sender_id = '2' AND conversations.recipient_id ='1'))
+  [1m[36mConversation Load (0.4ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE ((conversations.sender_id = '1' AND conversations.recipient_id ='2') OR (conversations.sender_id = '2' AND conversations.recipient_id ='1'))  ORDER BY "conversations"."id" ASC LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:34:02 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"hey there cutie"}, "conversation_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mConversation Load (0.1ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "hey there cutie"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:34:02.189525"], ["updated_at", "2015-04-03 14:34:02.189525"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/_message.html.erb (0.9ms)
+  Rendered messages/create.js.erb (8.5ms)
+Completed 200 OK in 19ms (Views: 12.9ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:34:10 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"I live 3 miles away. Call me"}, "conversation_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.1ms)[0m  SELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "I live 3 miles away. Call me"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:34:10.040412"], ["updated_at", "2015-04-03 14:34:10.040412"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/_message.html.erb (0.8ms)
+  Rendered messages/create.js.erb (8.2ms)
+Completed 200 OK in 18ms (Views: 11.5ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:34:15 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"WHy are you ignoring me?"}, "conversation_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mConversation Load (0.5ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "WHy are you ignoring me?"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:34:15.475090"], ["updated_at", "2015-04-03 14:34:15.475090"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/_message.html.erb (0.7ms)
+  Rendered messages/create.js.erb (8.8ms)
+Completed 200 OK in 19ms (Views: 12.2ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/conversations" for 127.0.0.1 at 2015-04-03 08:34:22 -0600
+Processing by ConversationsController#create as */*
+  Parameters: {"sender_id"=>"1", "recipient_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.8ms)[0m  SELECT "conversations".* FROM "conversations" WHERE ((conversations.sender_id = '1' AND conversations.recipient_id ='2') OR (conversations.sender_id = '2' AND conversations.recipient_id ='1'))
+  [1m[36mConversation Load (0.6ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE ((conversations.sender_id = '1' AND conversations.recipient_id ='2') OR (conversations.sender_id = '2' AND conversations.recipient_id ='1'))  ORDER BY "conversations"."id" ASC LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:34:34 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"I hate you so much!"}, "conversation_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mConversation Load (0.1ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "I hate you so much!"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:34:34.697244"], ["updated_at", "2015-04-03 14:34:34.697244"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/_message.html.erb (0.9ms)
+  Rendered messages/create.js.erb (7.2ms)
+Completed 200 OK in 17ms (Views: 11.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:34:44 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"So mean, I didn't like you anyway"}, "conversation_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.4ms)[0m  SELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "So mean, I didn't like you anyway"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:34:44.043369"], ["updated_at", "2015-04-03 14:34:44.043369"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/_message.html.erb (1.0ms)
+  Rendered messages/create.js.erb (9.2ms)
+Completed 200 OK in 19ms (Views: 12.6ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:34:55 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"What do you mean YOU people?!"}, "conversation_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "What do you mean YOU people?!"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:34:55.196878"], ["updated_at", "2015-04-03 14:34:55.196878"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/_message.html.erb (0.8ms)
+  Rendered messages/create.js.erb (8.9ms)
+Completed 200 OK in 20ms (Views: 13.8ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:35:06 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"Racism!"}, "conversation_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.2ms)[0m  SELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "Racism!"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:35:06.865812"], ["updated_at", "2015-04-03 14:35:06.865812"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/_message.html.erb (0.6ms)
+  Rendered messages/create.js.erb (6.5ms)
+Completed 200 OK in 17ms (Views: 9.8ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:35:09 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"racism!"}, "conversation_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "racism!"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:35:09.116492"], ["updated_at", "2015-04-03 14:35:09.116492"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/_message.html.erb (1.0ms)
+  Rendered messages/create.js.erb (7.4ms)
+Completed 200 OK in 21ms (Views: 11.2ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:35:56 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"Just give me your money!"}, "conversation_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.4ms)[0m  SELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "Just give me your money!"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:35:56.557464"], ["updated_at", "2015-04-03 14:35:56.557464"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/_message.html.erb (1.1ms)
+  Rendered messages/create.js.erb (8.0ms)
+Completed 200 OK in 20ms (Views: 11.8ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 08:35:59 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"You slut"}, "conversation_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "You slut"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 14:35:59.531922"], ["updated_at", "2015-04-03 14:35:59.531922"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/_message.html.erb (0.8ms)
+  Rendered messages/create.js.erb (8.6ms)
+Completed 200 OK in 19ms (Views: 12.2ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 12:26:54 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"dajkjdf"}, "conversation_id"=>"1"}
+  [1m[36mUser Load (5.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.4ms)[0m  SELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (1.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.0ms)[0m  INSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "dajkjdf"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 18:26:54.616235"], ["updated_at", "2015-04-03 18:26:54.616235"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/_message.html.erb (2.1ms)
+  Rendered messages/create.js.erb (28.7ms)
+Completed 200 OK in 103ms (Views: 36.9ms | ActiveRecord: 15.7ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 12:29:30 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"asddsa"}, "conversation_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mConversation Load (0.3ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "asddsa"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 18:29:30.250982"], ["updated_at", "2015-04-03 18:29:30.250982"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/_message.html.erb (1.8ms)
+  Rendered messages/create.js.erb (17.9ms)
+Completed 200 OK in 32ms (Views: 23.7ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 12:34:02 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"adadasd"}, "conversation_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.2ms)[0m  SELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "adadasd"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 18:34:02.064385"], ["updated_at", "2015-04-03 18:34:02.064385"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/_message.html.erb (1.0ms)
+  Rendered messages/create.js.erb (13.2ms)
+Completed 200 OK in 27ms (Views: 18.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 14:57:08 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"dfsfds"}, "conversation_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "dfsfds"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 20:57:08.679195"], ["updated_at", "2015-04-03 20:57:08.679195"]]
+  [1m[35m (3.7ms)[0m  COMMIT
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/_message.html.erb (1.1ms)
+  Rendered messages/create.js.erb (12.8ms)
+Completed 200 OK in 31ms (Views: 20.0ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 14:57:52 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"egege"}, "conversation_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mConversation Load (0.3ms)[0m  SELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "egege"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 20:57:52.233525"], ["updated_at", "2015-04-03 20:57:52.233525"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/_message.html.erb (1.2ms)
+  Rendered messages/create.js.erb (15.4ms)
+Completed 200 OK in 32ms (Views: 22.3ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2015-04-03 14:57:58 -0600
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "message"=>{"body"=>"fbgdhbdfhgfddgh"}, "conversation_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT  "conversations".* FROM "conversations" WHERE "conversations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "messages" ("body", "conversation_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "fbgdhbdfhgfddgh"], ["conversation_id", 1], ["user_id", 1], ["created_at", "2015-04-03 20:57:58.316308"], ["updated_at", "2015-04-03 20:57:58.316308"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/_message.html.erb (1.4ms)
+  Rendered messages/create.js.erb (18.5ms)
+Completed 200 OK in 34ms (Views: 22.9ms | ActiveRecord: 2.7ms)
