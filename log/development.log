@@ -21502,3 +21502,209 @@ Processing by MessagesController#create as JS
   Rendered messages/_message.html.erb (1.4ms)
   Rendered messages/create.js.erb (18.5ms)
 Completed 200 OK in 34ms (Views: 22.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/faye.js" for 127.0.0.1 at 2015-04-03 20:08:07 -0600
+
+ActionController::RoutingError (No route matches [GET] "/faye.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.6.0) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.0) lib/rack/server.rb:286:in `start'
+  railties (4.2.0) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.0) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/larsonkonr/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/larsonkonr/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/larsonkonr/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.1ms)
+  Rendered /Users/larsonkonr/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /Users/larsonkonr/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.2ms)
+
+
+Started GET "/faye.js" for 127.0.0.1 at 2015-04-03 20:08:09 -0600
+
+ActionController::RoutingError (No route matches [GET] "/faye.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.6.0) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.0) lib/rack/server.rb:286:in `start'
+  railties (4.2.0) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.0) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/larsonkonr/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/larsonkonr/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/larsonkonr/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/larsonkonr/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/larsonkonr/.rvm/gems/ruby-2.1.2/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 536ms (Views: 534.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chat-ae47fe844c4d89b804b251866cdded64.css?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/conversations-3bc746980d14f4d478e3c0afd6417209.css?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/dashboard-cec44d1310a7fa230ec171574aa238b8.css?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/home-6277e58eda7ce07dbde25ce412bc9f38.css?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/users-c10398b6f09351b5ad3dc0bfaff0fc00.css?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/application-8aad899db38d9e727173b87f74cc0e52.css?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/chat-48f345ca0f0bc036d0f516b795ff31a3.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/private_pub-45038657b433af8881d789bffa35a77a.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/conversations-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/dashboard-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:20 -0600
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:21 -0600
+
+
+Started GET "/assets/messages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:21 -0600
+
+
+Started GET "/assets/public_pub-45038657b433af8881d789bffa35a77a.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:21 -0600
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:21 -0600
+
+
+Started GET "/assets/users-d36ac1bdd6e0a36d9cc35937930d1235.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:21 -0600
+
+
+Started GET "/assets/application-b2f6a5329e21c6efcb012355b03cad9a.js?body=1" for 127.0.0.1 at 2015-04-03 20:08:21 -0600
